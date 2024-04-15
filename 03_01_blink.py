@@ -1,7 +1,7 @@
 from machine import Pin
 from utime import sleep
 
-led = Pin(16, Pin.OUT)
+led = Pin('LED', Pin.OUT)
 
 while True:
     led.on()
