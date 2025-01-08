@@ -5,9 +5,9 @@ red_ch = PWM(Pin(16))
 green_ch = PWM(Pin(17))
 blue_ch = PWM(Pin(15))
 
-red_ch.freq(1000);
-green_ch.freq(1000);
-blue_ch.freq(1000);
+red_ch.freq(1000)
+green_ch.freq(1000)
+blue_ch.freq(1000)
 
 button = Pin(12, Pin.IN, Pin.PULL_UP)
 colors = [[255, 0, 0], [127, 127, 0],[0, 255, 0], [0, 127, 127], [0, 0, 255], [127, 0, 127]]
