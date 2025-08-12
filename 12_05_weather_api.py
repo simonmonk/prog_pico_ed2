@@ -7,7 +7,7 @@ from ssd1306 import SSD1306_I2C
 
 ssid = 'Network'
 password = 'WiFi password'
-key = 'ea751fc7712f2705=e8a448213b712'
+key = 'ea71fc7712f2705=e8a448213b712'
 location = 'lat=53.925854&lon=-3.021994'
 api_base = 'http://api.openweathermap.org/data/2.5/weather?'
 url = api_base + location + '&appid=' + key
@@ -37,4 +37,9 @@ def update_display():
     oled.text(temp_str, 0, 0, 1)
     oled.text(description, 0, 20, 1)
     oled.show()
+
+while True:
+    get_weather()
+    update_display()
+    sleep(update_period)
 

@@ -1,6 +1,6 @@
 import mm_wlan
 
-ssid = 'Network'
+ssid = 'network'
 password = 'password'
   
 mm_wlan.connect_to_network(ssid, password)
